@@ -7,12 +7,12 @@ using namespace std;
 int main()
 {
     int size;
-
+    int pos, elem;
     cout<<"Enter array size: ";
 
     cin >> size;
 
-    int a(size);
+    int a[size];
     cout << "Enter array element: ";
 
     for(int i=0; i<size; i++)
@@ -21,10 +21,8 @@ int main()
       cin >> a[i];
     }
 
-    cout << endl;
-         << endl;
-         << "===================" << endl;
-         << endl;
+    cout<<endl<< "===================" << endl ;
+       
 
     int choice;
 
@@ -42,16 +40,47 @@ int main()
         switch(choice)
         {
             case 1: 
+               
+
+            cout << "Enter possition";
+            cin >> pos;
+
+            cout << "Enter new element";
+            cin >> elem;
+
+            for(int i=size
+            ; i>pos; i--)
+            {
+               a [i+1] = a [i];
+            }
+            size++;
+            a [pos] = elem;
+
+            cout << "Element insert successfully....";
+            cout << endl;
                   break;
             case 2:
+            
+
+            cout << "Enter possition";
+            cin >> pos;
+
+            cout << "Enter new element";
+            cin >> elem;
+
+            a[pos]=elem;
+
+            cout <<"Element updadet successfully...." << endl;
+
                  break;      
             case 3: 
                  break;      
             case 4:
-            cout << endl << "Array is: ";
-            for(int e : a)
+            cout << endl 
+                 << "Array is: ";
+            for(int i =0;  i < size; i++)
             {
-              cout << e << " ";
+              cout << a[i] << " ";
             }
             cout << endl;
                  break;      
