@@ -15,19 +15,19 @@ int main()
     int i;
 
     
-    for(i=0; i<size; i++);
+    for(i=0; i<size; i++)
     {
         cout << "Enter a[" << i <<"]: ";
         cin >> a[i];
 
     }
     
-    // cout << "Array elements: " << endl;
-    // for( i = 0 ; i < size ; i++);
-    // {
-    //     cout << a[i] << " ";
+    cout << "Array elements: " << endl;
+    for( i = 0 ; i < size ; i++)
+    {
+        cout << a[i] << " ";
         
-    // }
+    }
 
     return 0;
 }
